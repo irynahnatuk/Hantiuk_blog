@@ -1,0 +1,20 @@
+{
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.13",
+        "barryvdh/laravel-ide-helper": "^3.0"
+    }
+
+    "scripts": {
+    "post-update-cmd": [
+        "@php artisan ide-helper:generate",
+        "@php artisan ide-helper:models --write"
+    ],
+    "post-install-cmd": [
+        "@php artisan ide-helper:generate",
+        "@php artisan ide-helper:models --write"
+    ]
+}
+
+}
+
+
